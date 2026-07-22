@@ -86,45 +86,45 @@ int main()
         }
 
         // Difficulty level : Medium
-        else if (difficultyChoice == 2) {
-            cout << "\nYou have 7 choices for finding the "
-                    "secret number between 1 and 100.";
-            int choicesLeft = 7;
-            for (int i = 1; i <= 7; i++) {
+        // else if (difficultyChoice == 2) {
+        //     cout << "\nYou have 7 choices for finding the "
+        //             "secret number between 1 and 100.";
+        //     int choicesLeft = 7;
+        //     for (int i = 1; i <= 7; i++) {
 
-                // prompting the player to guess the secret
-                // number
-                cout << "\n\nEnter the number: ";
-                cin >> playerChoice;
+        //         // prompting the player to guess the secret
+        //         // number
+        //         cout << "\n\nEnter the number: ";
+        //         cin >> playerChoice;
 
-                // determining if the playerChoice matches
-                // the secret number
-                if (playerChoice == secretNumber) {
-                    cout << "Well played! You won, "
-                         << playerChoice
-                         << " is the secret number" << endl;
-                    cout << "\t\t\t Thanks for playing...."
-                         << endl;
-                    cout << "Play the game again with "
-                            "us!!\n\n"
-                         << endl;
-                    break;
-                }
-                else {
-                    cout << "Nope, " << playerChoice
-                         << " is not the right number\n";
-                    if (playerChoice > secretNumber) {
-                        cout << "The secret number is "
-                                "smaller than the number "
-                                "you have chosen"
-                             << endl;
-                    }
-                    else {
-                        cout << "The secret number is "
-                                "greater than the number "
-                                "you have chosen"
-                             << endl;
-                    }
+        //         // determining if the playerChoice matches
+        //         // the secret number
+        //         if (playerChoice == secretNumber) {
+        //             cout << "Well played! You won, "
+        //                  << playerChoice
+        //                  << " is the secret number" << endl;
+        //             cout << "\t\t\t Thanks for playing...."
+        //                  << endl;
+        //             cout << "Play the game again with "
+        //                     "us!!\n\n"
+        //                  << endl;
+        //             break;
+        //         }
+        //         else {
+        //             cout << "Nope, " << playerChoice
+        //                  << " is not the right number\n";
+        //             if (playerChoice > secretNumber) {
+        //                 cout << "The secret number is "
+        //                         "smaller than the number "
+        //                         "you have chosen"
+        //                      << endl;
+        //             }
+        //             else {
+        //                 cout << "The secret number is "
+        //                         "greater than the number "
+        //                         "you have chosen"
+        //                      << endl;
+        //             }
                     choicesLeft--;
                     cout << choicesLeft << " choices left. "
                          << endl;
